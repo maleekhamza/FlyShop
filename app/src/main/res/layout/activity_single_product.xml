@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/singleImage"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/instagram"></ImageView>
+
+        <TextView
+            android:id="@+id/singleHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Head Line"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:tooltipText="10dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="$"
+                android:textColor="#FF9800"
+                android:textSize="32dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/singlePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="199.99"
+                android:textColor="#FF9800"
+                android:textSize="32dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Phone :"
+                android:textColor="@color/black"
+                android:textSize="22dp"></TextView>
+
+            <TextView
+                android:id="@+id/singleBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="50dp"
+                android:text="xxxxxxxxx"
+                android:textColor="@color/black"
+                android:textSize="22dp"></TextView>
+
+            <Button
+                android:id="@+id/btnappel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appeler"
+                android:backgroundTint="#63BC44"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:tooltipText="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Product Type :"
+                android:textColor="@color/black"
+                android:textSize="22dp"></TextView>
+
+            <TextView
+                android:id="@+id/singleProductType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Product Type"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:tooltipText="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="About Product :"
+                android:textColor="@color/black"
+                android:textSize="22dp"></TextView>
+
+            <TextView
+                android:id="@+id/singleAboutProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="about product"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:tooltipText="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Origin :"
+                android:textColor="@color/black"
+                android:textSize="22dp"></TextView>
+
+            <TextView
+                android:id="@+id/singleOrigin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#2A71A6"
+            android:text="Add to Cart"></Button>
+    </LinearLayout>
+</RelativeLayout>
